@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+#add-note {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#note-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#note-form input,
+#note-form textarea,
+#note-form select {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#note-form select {
+    width: 150px;
+    cursor: pointer;
+}
+
+#note-form button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#notes-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+.note {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    text-align: justify;
+}
+
+.note img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.note h3 {
+    margin: 10px 0;
+}
+
+.note p:last-child {
+    font-weight: bold;
+    color: #444;
+}

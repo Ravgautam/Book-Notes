@@ -1,0 +1,7 @@
+CREATE TABLE booksummary(
+id SERIAL PRIMARY KEY,
+title VARCHAR(200) UNIQUE NOT NULL,
+summary VARCHAR(500) NOT NULL,
+rating INT,
+image VARCHAR(200)
+);

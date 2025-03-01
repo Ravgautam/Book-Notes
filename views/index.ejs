@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Notes</title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>Book Notes By Rav</h1>
+    </header>
+    
+    <main>
+        <section id="add-note">
+            <h2>Add a New Note</h2>
+            <form id="note-form" action="/add" method="post">
+                <input type="text" id="book-title" placeholder="Book Title" required name="inputTitle">
+                <textarea id="book-notes" placeholder="Write your notes..." required name="inputText"></textarea>
+                <label for="book-rating">Rating:</label>
+                <select id="book-rating" name="inputRating" required>
+                    <option value="1">1 Star</option>
+                    <option value="2">2 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="5">5 Stars</option>
+                </select>
+
+                <button type="submit">Add Note</button>
+            </form>
+        </section>
+        
+       <%  if(locals.notes){  %>
+        <section id="notes-list">
+            <h2>My Notes</h2>
+            <div id="notes-container">
+                <% notes.forEach(note => { %>
+                    <div class="note">
+                        <img src="<%= note.image %>" alt="Book Cover">
+                        <h3><%= note.title %></h3>
+                        <p><%= note.summary %></p>
+                        <p>Rating: <%= note.rating %> Stars</p>
+                    </div>
+                <% }); %>
+            </div>
+        </section>
+       <% } %>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
