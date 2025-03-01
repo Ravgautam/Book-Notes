@@ -1,11 +1,10 @@
 # Book Notes Website
 
 ## Overview
-This is a simple Book Notes website where users can add notes about books they have read. Users can input the book title, write their notes, rate the book, and view their notes in a horizontally scrolling layout.
+This is a simple Book Notes website where users can add notes about books they have read. Users can input the book title, write their notes, rate the book, and view their notes.
 
 ## Features
 - Add book title, notes, and rating.
-- Display book notes in a scrollable horizontal list.
 - Store book cover images using a public API or placeholder image.
 - Responsive and user-friendly design.
 
@@ -14,6 +13,9 @@ This is a simple Book Notes website where users can add notes about books they h
 - CSS
 - JavaScript
 - EJS (Embedded JavaScript Templates)
+- Postgres Database
+- Express
+- Nodejs
 
 ## Installation
 1. Clone the repository:
@@ -30,20 +32,10 @@ This is a simple Book Notes website where users can add notes about books they h
 1. Enter the book title and notes.
 2. Select a rating from the dropdown menu.
 3. Click the "Add Note" button to save the note.
-4. Notes will appear in a scrollable horizontal list.
+4. Notes will appear in a list.
 
-## File Structure
-```
-/book-notes
-│── index.html       # Main HTML file
-│── styles.css       # CSS for styling the page
-│── script.js        # JavaScript for form handling and dynamic content
-│── views/           # EJS templates (if applicable)
-```
+
 
 ## Contributing
 Feel free to submit issues and pull requests for improvements!
-
-## License
-This project is open-source and available under the MIT License.
 
